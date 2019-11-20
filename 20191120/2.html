@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>수업시간에 하는것</title>
+    <style>
+    *{margin: 0; padding: 0;}
+    div{text-align: center;}
+    </style>
+</head>
+<body>
+    <div>
+        <button onclick="back()">이전</button>
+            <img src="izone.png" id="iz" alt="" width="500" height="500">
+        <button onclick="front()">다음</button>
+    </div>
+    <script>
+        //이미지 리스트를 배열로 정의
+        let imglist = ["izone.png","izo.jpg","123.jpg","단체.jpg","majo.jpg","majo2.jpg"];
+        let num = 0; //임의의 숫자변수를 선언
+      //next 라는 함수를 만들고 이 함수를 다음이라는 버튼과 연결
+        function front(){
+            //iz라는 변수는 img 태그 즉 iz라는 id를 가진 요소를 변수
+            let iz = document.getElementById("iz");
+            //front라는 함수 호출시 num을 1씩 증가
+            num++;
+            if(num == 6 ){
+                num = 0;
+            }
+            //img 태그의 주소부분이 imglist배열로 정의
+            iz.src = imglist[num];
+            console.log(num);
+        }
+        function back(){
+            //iz라는 변수는 img 태그 즉 iz라는 id를 가진 요소를 변수
+            let iz = document.getElementById("iz");
+            //next라는 함수 호출시 num을 1씩 감소
+            num--;
+            //num값이 -1이 되면 5으로 바꿔주는 메서드
+            if(num == -1 ){
+                num = 5;
+            }
+            iz.src = imglist[num];
+            console.log(num);
+        }
+    </script>
+</body>
+</html>
