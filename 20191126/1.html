@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // function aaa(){
+        //     alert("Hi?");
+        // }
+        // aaa();
+
+        //화살표함수로 변경
+        // const aaa = () => alert("Hi");
+        // aaa();
+
+        // 문제 : const abc라는 상수를 주고 이 상수를 호출하면서 파라미터 값으로 오늘 날짜(26)을 넘겨줘서 alert로 "오늘은 26일 입니다"(화살표함수이용)
+        // const abc = a => alert(`오늘은 ${a} 일 입니다`);
+        // abc(26);
+        
+    </script>
+</head>
+<body>
+    <h1 id="aaa"></h1>
+    <h2 class="bbb"></h2>
+    <script>
+        //queryselector을 사용하면 따로 getelement뭐시기를 안써도 된다.
+     const aaa = document.querySelector("#aaa"); //id값은 #변수명
+     aaa.innerHTML = "개구리는";
+     const bbb = document.querySelector(".bbb"); //class값은 .변수명
+     bbb.innerHTML = "개굴개굴";
+        bbb.style.color = "green";  //스타일도 한번 줘 봅시다.
+    </script>
+</body>
+</html>
