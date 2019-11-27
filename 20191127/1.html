@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>클릭시 색변경</title>
+</head>
+<body>
+    <h1 class="cng" style="color: royalblue;">click me</h1>
+    <script>
+      const tt = document.querySelector(".cng");
+        tt.innerHTML = "Click Me!!!";
+        tt.style.color = "red";
+        function changecolor() {
+            if(tt.style.color === "red"){
+                tt.innerHTML = "orange";
+                tt.style.color = "orange";
+            }else if(tt.style.color === "orange"){
+                tt.innerHTML = "yellow";
+                tt.style.color = "yellow";
+            }else if(tt.style.color === "yellow"){
+                tt.innerHTML = "green";
+                tt.style.color = "green";
+            }else if(tt.style.color === "green"){
+                tt.innerHTML = "blue";
+                tt.style.color = "blue";
+            }else if(tt.style.color === "blue"){
+                tt.innerHTML = "navy";
+                tt.style.color = "navy";
+            }else if(tt.style.color === "navy"){
+                tt.innerHTML = "puple";
+                tt.style.color = "purple";
+            }else{
+                tt.innerHTML = "end";
+                tt.style.color = "red";
+            }
+        }
+        tt.addEventListener("click",changecolor);
+
+          /*
+        function changewidth(){
+            
+            alert("어맛 브라우져 창의 크기가 바뀌었어요")
+            //console.log("창 크기 변경");
+        }
+        // 브라우저 창의 이벤트 함수뒤에 ()까지 출력하면 최초 실행 1번만 되고
+        // 이후 실행 x
+        // 지속적인 이벤트를 받아야 할 경우에는 함수명만 입력
+        // window.addEventListener("resize", changewidth()); 오류!
+        window.addEventListener("resize", changewidth);
+        */
+       
+        /*
+        let a = 1;
+        let b = "1";
+        if(a==b){
+            console.log("같음")}else{console.log("다름");}
+            VM373:2 같음
+        if(a===b){
+            console.log("같음")}else{console.log("다름");}
+            VM378:2 다름
+        */
+    </script>
+   
+    
+</body>
+</html>
