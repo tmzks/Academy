@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <img class="image" src="1.jpg" alt="">
+    <p class="text">mmmmmm</p>
+    <script>
+        const ima = document.querySelector(".image");
+        function change(){
+            ima.src = "2.jpg";
+        }
+        function change2(){
+            ima.src = "3.jpg";
+        }
+        function insertkey(){
+            alert("키보드가 눌렀어요");
+        }
+        function insertkey2(){
+            alert("키보드를 뗏어요");
+        }
+        function selectsumthing(){
+            text.innerHTML = "이 텍스트가 선택되었습니다.";
+        }
+        // ima.addEventListener("click",change);
+        // ima.addEventListener("mouseenter",change); //마우스가 올라오면 이미지가 변한다.
+        // ima.addEventListener("mouseleave",change2); //마우스가 벗어나면 이미지가 변한다.
+      
+        // window.addEventListener("keydown",insertkey); //키를 눌렀을 때
+        // window.addEventListener("keyup",insertkey2); //키를 뗏을 때
+        
+        // window.addEventListener("scroll",함수명);  //스크롤할때
+        // window.addEventListener("select",selectsumthing);  //html문서 상의 텍스트가 선택 되었을 때 발생하는 이벤트 리스너
+        
+        //요소를 드래그 했을 때 발생하는 이벤트 리스너
+        // function dont(){
+        //     alert("불펌금지");
+        // }
+        // window.addEventListener("drag",dont);
+
+        function full(){
+            alert("전체화면 전환");
+        }
+        window.addEventListener("fullscreen",full);
+
+    </script>
+</body>
+</html>

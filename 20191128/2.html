@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>두개를 합쳐서 새로운 무언가를 만들자</title>
+</head>
+<body>
+        <img class="image" src="1.jpg" alt="">
+
+        <script>
+            const ima = document.querySelector(".image");
+            const ima2 = new Array("1.jpg","2.jpg","3.jpg","4.jpg");
+            ima.style.color = "red";
+            function change(){
+                if(ima.src === "1.jpg"){
+                ima.scr = "2.jpg";
+               }else if(ima.src === "2.jpg"){
+                ima.scr = "3.jpg";
+               }else{
+                ima.src = "4.jpg";
+            }
+               
+    }
+            ima.addEventListener("mouseenter",change);
+           
+        </script>
+</body>
+</html>
