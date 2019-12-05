@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <img src="123.jpg" alt="아이즈원" width="700"; height="500";>
+    <script>
+        let a = document.querySelector("img");
+        let list = ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg"];
+
+        setInterval(()=>{
+            let count = Math.ceil(Math.random()*5);
+            a.src=list[count];
+            console.log(count);
+        },1000);
+    </script>
+</body>
+</html>
