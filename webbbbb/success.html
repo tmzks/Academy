@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>개어렵네싯파</title>
+    <style>
+        .popo{
+            color: black;
+        }
+        /* #backg{
+           background: url(fox.jpg) no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-attachment: fixed;
+            
+        } */
+        /* 첫문자를 대문자로 */
+         p::first-letter{font-size:50px; color: black;} 
+        /* 메뉴바만든거임 */
+        *{ margin: 0; padding: 0;}
+        li{list-style: none;}
+        a{text-decoration: none;}
+
+        
+
+        .wrapper{width: 1170px; margin: 0 auto;}
+        .clearfix{content: ''; display: block; clear: both;}
+
+        header{height: 75; background-color:black; border: 1px solid #253342;
+               position: fixed; width: 100%; z-index: 9999; top: 0; left: 0;
+              }
+        h1{color: white; line-height: 75px; float: left;}
+        .menu{float: right;}
+        .menu li{float: left;}
+        .menu a{line-height: 75px; color: white; padding: 0 15px; display: block;}
+        
+        /* 검색창만든거임 */
+        .green_window {
+	    display: inline-block;
+	    width: 366px; height: 34px;
+	    border: 3px solid white;
+	    background: white;
+        }
+        .input_text {
+	    width: 348px; height: 21px;
+	    margin: 6px 0 0 9px;
+	    border: 0;
+	    line-height: 21px;
+	    font-weight: bold;
+	    font-size: 16px;
+	    outline: none;
+        }
+        .sch_smit {
+	    width: 54px; height: 40px;
+	    margin: 0; border: 0;
+	    vertical-align: top;
+	    background: white;
+	    color: black;
+	    font-weight: bold;
+	    border-radius: 1px;
+	    cursor: pointer;
+        }
+        .sch_smit:hover {
+	    background: yellow;
+        }
+        /* 핀터레스트 */
+    .con{
+        column-width: 350px;
+        column-gap: 15px;
+    }
+    .con figure{
+        display: inline-block;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        margin: 0;
+        margin-bottom: 15px;
+        padding: 10px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+    .con figure img{
+        width: 100%;
+    }
+    .con figure figcaption{
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        margin-top: 11px;
+    }
+    .con{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid white;
+    }
+    header{
+        border-bottom: 1px solid red;
+        text-align: center;
+    }
+    .kon{
+        display: flex;
+        flex-direction: row;
+    }
+    footer{
+        border-top: 1px solid white;
+        text-align: center;
+    }
+    
+    .kon nav{
+        border-right: 1px solid blue;
+    }
+    .kon aside {
+        border-left: 1px solid white;
+      }
+      .kon nav, aside {
+        flex-basis: 200px;;
+        flex-shrink: 0;
+      }
+      .kon article {
+        padding: 10px;
+      }
+
+      
+
+      /* top버튼 */
+      #stopp{
+          width: 50px; height: 50px;
+          position: fixed;
+          top:100px ; 
+      }
+      #banner{
+            width:50px; height:50px;
+            /* 스크롤을 내려도 현위치고정 */
+            position:fixed;
+            top:850px; 
+    }
+    #banner a{
+      width:50px; height:50px;
+      display:block;
+      text-decoration:none;
+      text-align:center;
+      text-transform:uppercase;
+      line-height:50px;
+      font-size:12px;
+      border: 1px solid blue;
+      background-color:yellow;
+      border-radius:50%;
+    }
+    #banner a:hover{color:red;}
+    /* #bott{
+        position: fixed;
+        top: 700px; left: 500px; 
+    } */
+    </style>
+</head>
+<body id="backg">
+    
+    <div class="con">
+        <header>
+                <h1>SUCCESS</h1>
+                <nav>
+                 <ul class="menu">
+                     <li><a href="#">Home</a></li>
+                     <li><a href="#">About</a></li>
+                     <li><a href="#">Board</a></li>
+                     <li><a href="#">Reference</a></li>
+                     <li><a href="#">contact</a></li>
+                 </ul>
+                 </nav>
+                <span class='green_window'>
+                <input type='text' class='input_text' placeholder="검색어를 입력하세요." />
+                </span>
+                <button type='submit' class='sch_smit'>search</button>
+        </header>
+        <br><br><br><br>
+        <section class="kon">
+          
+               <!-- <figure>
+                    <img src="1.jpg" width="100" height="100" alt="염따">
+                    <figcaption>염따</figcaption>
+                </figure>
+                <figure>
+                    <img src="2.jpg" width="100" height="100" alt="염따">
+                    <figcaption>염따</figcaption>
+                </figure>
+                <figure>
+                    <img src="3.jpg" width="100" height="100" alt="염따">
+                    <figcaption>염따</figcaption>
+                </figure>
+                <figure>
+                    <img src="4.jpg" width="100" height="100" alt="염따">
+                    <figcaption>염따</figcaption>
+                </figure>
+             -->
+            <article id="pin">
+                이진욱의 웹에 대한 소제목<br><br><br><br>
+
+                 <!-- <figure>
+                    <img src="1.jpg" width="100" height="100" alt="염따">
+                    <figcaption>염따</figcaption>
+                </figure>
+                <figure>
+                    <img src="2.jpg" width="100" height="100" alt="염따">
+                    <figcaption>염따</figcaption>
+                </figure>
+                <figure>
+                    <img src="3.jpg" width="100" height="100" alt="염따">
+                    <figcaption>염따</figcaption>
+                </figure>
+                <figure>
+                    <img src="4.jpg" width="100" height="100" alt="염따">
+                    <figcaption>염따</figcaption>
+                </figure>
+             -->
+               <div class="popo">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus ad totam nam ut aspernatur saepe possimus nisi nemo consequatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus odio placeat autem, magnam non quaerat et temporibus quos asperiores illum provident rem esse necessitatibus ullam, blanditiis quibusdam. Culpa, quae maxime molestias nobis in atque accusamus illum voluptatem enim vitae eveniet ullam tempora velit natus tempore ut, asperiores optio hic amet sed officiis dicta laboriosam? Saepe autem molestias inventore dolor. Quas.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus odio placeat autem, magnam non quaerat et temporibus quos asperiores illum provident rem esse necessitatibus ullam, blanditiis quibusdam. Culpa, quae maxime molestias nobis in atque accusamus illum voluptatem enim vitae eveniet ullam tempora velit natus tempore ut, asperiores optio hic amet sed officiis dicta laboriosam? Saepe autem molestias inventore dolor. Quas.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus odio placeat autem, magnam non quaerat et temporibus quos asperiores illum provident rem esse necessitatibus ullam, blanditiis quibusdam. Culpa, quae maxime molestias nobis in atque accusamus illum voluptatem enim vitae eveniet ullam tempora velit natus tempore ut, asperiores optio hic amet sed officiis dicta laboriosam? Saepe autem molestias inventore dolor. Quas.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus odio placeat autem, magnam non quaerat et temporibus quos asperiores illum provident rem esse necessitatibus ullam, blanditiis quibusdam. Culpa, quae maxime molestias nobis in atque accusamus illum voluptatem enim vitae eveniet ullam tempora velit natus tempore ut, asperiores optio hic amet sed officiis dicta laboriosam? Saepe autem molestias inventore dolor. Quas.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus odio placeat autem, magnam non quaerat et temporibus quos asperiores illum provident rem esse necessitatibus ullam, blanditiis quibusdam. Culpa, quae maxime molestias nobis in atque accusamus illum voluptatem enim vitae eveniet ullam tempora velit natus tempore ut, asperiores optio hic amet sed officiis dicta laboriosam? Saepe autem molestias inventore dolor. Quas.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus odio placeat autem, magnam non quaerat et temporibus quos asperiores illum provident rem esse necessitatibus ullam, blanditiis quibusdam. Culpa, quae maxime molestias nobis in atque accusamus illum voluptatem enim vitae eveniet ullam tempora velit natus tempore ut, asperiores optio hic amet sed officiis dicta laboriosam? Saepe autem molestias inventore dolor. Quas.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus odio placeat autem, magnam non quaerat et temporibus quos asperiores illum provident rem esse necessitatibus ullam, blanditiis quibusdam. Culpa, quae maxime molestias nobis in atque accusamus illum voluptatem enim vitae eveniet ullam tempora velit natus tempore ut, asperiores optio hic amet sed officiis dicta laboriosam? Saepe autem molestias inventore dolor. Quas.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus odio placeat autem, magnam non quaerat et temporibus quos asperiores illum provident rem esse necessitatibus ullam, blanditiis quibusdam. Culpa, quae maxime molestias nobis in atque accusamus illum voluptatem enim vitae eveniet ullam tempora velit natus tempore ut, asperiores optio hic amet sed officiis dicta laboriosam? Saepe autem molestias inventore dolor. Quas.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus odio placeat autem, magnam non quaerat et temporibus quos asperiores illum provident rem esse necessitatibus ullam, blanditiis quibusdam. Culpa, quae maxime molestias nobis in atque accusamus illum voluptatem enim vitae eveniet ullam tempora velit natus tempore ut, asperiores optio hic amet sed officiis dicta laboriosam? Saepe autem molestias inventore dolor. Quas.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus odio placeat autem, magnam non quaerat et temporibus quos asperiores illum provident rem esse necessitatibus ullam, blanditiis quibusdam. Culpa, quae maxime molestias nobis in atque accusamus illum voluptatem enim vitae eveniet ullam tempora velit natus tempore ut, asperiores optio hic amet sed officiis dicta laboriosam? Saepe autem molestias inventore dolor. Quas.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus odio placeat autem, magnam non quaerat et temporibus quos asperiores illum provident rem esse necessitatibus ullam, blanditiis quibusdam. Culpa, quae maxime molestias nobis in atque accusamus illum voluptatem enim vitae eveniet ullam tempora velit natus tempore ut, asperiores optio hic amet sed officiis dicta laboriosam? Saepe autem molestias inventore dolor. Quas.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus odio placeat autem, magnam non quaerat et temporibus quos asperiores illum provident rem esse necessitatibus ullam, blanditiis quibusdam. Culpa, quae maxime molestias nobis in atque accusamus illum voluptatem enim vitae eveniet ullam tempora velit natus tempore ut, asperiores optio hic amet sed officiis dicta laboriosam? Saepe autem molestias inventore dolor. Quas.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus odio placeat autem, magnam non quaerat et temporibus quos asperiores illum provident rem esse necessitatibus ullam, blanditiis quibusdam. Culpa, quae maxime molestias nobis in atque accusamus illum voluptatem enim vitae eveniet ullam tempora velit natus tempore ut, asperiores optio hic amet sed officiis dicta laboriosam? Saepe autem molestias inventore dolor. Quas.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus odio placeat autem, magnam non quaerat et temporibus quos asperiores illum provident rem esse necessitatibus ullam, blanditiis quibusdam. Culpa, quae maxime molestias nobis in atque accusamus illum voluptatem enim vitae eveniet ullam tempora velit natus tempore ut, asperiores optio hic amet sed officiis dicta laboriosam? Saepe autem molestias inventore dolor. Quas.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus odio placeat autem, magnam non quaerat et temporibus quos asperiores illum provident rem esse necessitatibus ullam, blanditiis quibusdam. Culpa, quae maxime molestias nobis in atque accusamus illum voluptatem enim vitae eveniet ullam tempora velit natus tempore ut, asperiores optio hic amet sed officiis dicta laboriosam? Saepe autem molestias inventore dolor. Quas.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus odio placeat autem, magnam non quaerat et temporibus quos asperiores illum provident rem esse necessitatibus ullam, blanditiis quibusdam. Culpa, quae maxime molestias nobis in atque accusamus illum voluptatem enim vitae eveniet ullam tempora velit natus tempore ut, asperiores optio hic amet sed officiis dicta laboriosam? Saepe autem molestias inventore dolor. Quas.Ad placeat recusandae dignissimos numquam fugiat dolorum sint dolorem minima eum magni quisquam itaque, aperiam reprehenderit doloremque unde deserunt vel nisi.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus quasi eligendi impedit assumenda eveniet eum nihil, commodi? Impedit deleniti cum maiores dolorum odit aperiam nesciunt dolores, labore rerum itaque voluptate doloremque harum, ullam earum aliquam repellat, nobis porro dolore illum debitis aspernatur ab. Error, atque debitis itaque nostrum corporis iusto dolorum ab impedit eum. Ea nostrum qui, eum eveniet. Alias nulla a maxime provident labore. Quae sunt veniam, nostrum sed ut dolorem. Amet dignissimos culpa quos deleniti neque veniam molestiae, quia. Qui similique veniam debitis aut quaerat maiores fuga nisi. Labore aspernatur quas porro, consequuntur obcaecati, error vitae nemo dolorem.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus quasi eligendi impedit assumenda eveniet eum nihil, commodi? Impedit deleniti cum maiores dolorum odit aperiam nesciunt dolores, labore rerum itaque voluptate doloremque harum, ullam earum aliquam repellat, nobis porro dolore illum debitis aspernatur ab. Error, atque debitis itaque nostrum corporis iusto dolorum ab impedit eum. Ea nostrum qui, eum eveniet. Alias nulla a maxime provident labore. Quae sunt veniam, nostrum sed ut dolorem. Amet dignissimos culpa quos deleniti neque veniam molestiae, quia. Qui similique veniam debitis aut quaerat maiores fuga nisi. Labore aspernatur quas porro, consequuntur obcaecati, error vitae nemo dolorem.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus quasi eligendi impedit assumenda eveniet eum nihil, commodi? Impedit deleniti cum maiores dolorum odit aperiam nesciunt dolores, labore rerum itaque voluptate doloremque harum, ullam earum aliquam repellat, nobis porro dolore illum debitis aspernatur ab. Error, atque debitis itaque nostrum corporis iusto dolorum ab impedit eum. Ea nostrum qui, eum eveniet. Alias nulla a maxime provident labore. Quae sunt veniam, nostrum sed ut dolorem. Amet dignissimos culpa quos deleniti neque veniam molestiae, quia. Qui similique veniam debitis aut quaerat maiores fuga nisi. Labore aspernatur quas porro, consequuntur obcaecati, error vitae nemo dolorem.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus quasi eligendi impedit assumenda eveniet eum nihil, commodi? Impedit deleniti cum maiores dolorum odit aperiam nesciunt dolores, labore rerum itaque voluptate doloremque harum, ullam earum aliquam repellat, nobis porro dolore illum debitis aspernatur ab. Error, atque debitis itaque nostrum corporis iusto dolorum ab impedit eum. Ea nostrum qui, eum eveniet. Alias nulla a maxime provident labore. Quae sunt veniam, nostrum sed ut dolorem. Amet dignissimos culpa quos deleniti neque veniam molestiae, quia. Qui similique veniam debitis aut quaerat maiores fuga nisi. Labore aspernatur quas porro, consequuntur obcaecati, error vitae nemo dolorem.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus quasi eligendi impedit assumenda eveniet eum nihil, commodi? Impedit deleniti cum maiores dolorum odit aperiam nesciunt dolores, labore rerum itaque voluptate doloremque harum, ullam earum aliquam repellat, nobis porro dolore illum debitis aspernatur ab. Error, atque debitis itaque nostrum corporis iusto dolorum ab impedit eum. Ea nostrum qui, eum eveniet. Alias nulla a maxime provident labore. Quae sunt veniam, nostrum sed ut dolorem. Amet dignissimos culpa quos deleniti neque veniam molestiae, quia. Qui similique veniam debitis aut quaerat maiores fuga nisi. Labore aspernatur quas porro, consequuntur obcaecati, error vitae nemo dolorem.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus quasi eligendi impedit assumenda eveniet eum nihil, commodi? Impedit deleniti cum maiores dolorum odit aperiam nesciunt dolores, labore rerum itaque voluptate doloremque harum, ullam earum aliquam repellat, nobis porro dolore illum debitis aspernatur ab. Error, atque debitis itaque nostrum corporis iusto dolorum ab impedit eum. Ea nostrum qui, eum eveniet. Alias nulla a maxime provident labore. Quae sunt veniam, nostrum sed ut dolorem. Amet dignissimos culpa quos deleniti neque veniam molestiae, quia. Qui similique veniam debitis aut quaerat maiores fuga nisi. Labore aspernatur quas porro, consequuntur obcaecati, error vitae nemo dolorem.</p>
+                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus quasi eligendi impedit assumenda eveniet eum nihil, commodi? Impedit deleniti cum maiores dolorum odit aperiam nesciunt dolores, labore rerum itaque voluptate doloremque harum, ullam earum aliquam repellat, nobis porro dolore illum debitis aspernatur ab. Error, atque debitis itaque nostrum corporis iusto dolorum ab impedit eum. Ea nostrum qui, eum eveniet. Alias nulla a maxime provident labore. Quae sunt veniam, nostrum sed ut dolorem. Amet dignissimos culpa quos deleniti neque veniam molestiae, quia. Qui similique veniam debitis aut quaerat maiores fuga nisi. Labore aspernatur quas porro, consequuntur obcaecati, error vitae nemo dolorem.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus quasi eligendi impedit assumenda eveniet eum nihil, commodi? Impedit deleniti cum maiores dolorum odit aperiam nesciunt dolores, labore rerum itaque voluptate doloremque harum, ullam earum aliquam repellat, nobis porro dolore illum debitis aspernatur ab. Error, atque debitis itaque nostrum corporis iusto dolorum ab impedit eum. Ea nostrum qui, eum eveniet. Alias nulla a maxime provident labore. Quae sunt veniam, nostrum sed ut dolorem. Amet dignissimos culpa quos deleniti neque veniam molestiae, quia. Qui similique veniam debitis aut quaerat maiores fuga nisi. Labore aspernatur quas porro, consequuntur obcaecati, error vitae nemo dolorem.</p>
+             -->
+                </div>
+                </article>
+            <aside>
+                    <div id="stopp">
+                    <!-- 오른쪽부분 -->
+                    <h2 class="now"></h2>
+                    <script src="success.js"></script>
+                    <hr>
+                    <br><br>
+                    
+                    
+                    <img src="a.jpg" alt="광고" width="200"; height="200";>
+                    <h3>Advertisement</h3>
+                    
+                    <script class="ddd">
+                         let a = document.querySelector("img");
+                         let list = ["a.jpg","b.png","c.jpg","d.jpg","e.jpg"];
+                         setInterval(()=>{
+                         let count = Math.ceil(Math.random()*4);
+                         a.src=list[count];
+                        //  console.log(count);
+                    },2000);
+                    </script>
+                    </div>
+                    <br>
+                    <!-- 맨위로가는버튼 -->
+                    <div id="banner">
+                    <a href="#">TOP</a>
+                    </div>
+            </aside>
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <footer id="bott">
+                <address>대구 달서구 호산동로36북길 14</address>
+               <small>Copyright 2019. LeeJinWookBYfrontEndDevaloper  All Rights Reserved.</small> 
+        </footer>
+    </div>
+</body>
+</html>
