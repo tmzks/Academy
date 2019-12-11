@@ -1,0 +1,11 @@
+vue깔고
+npm install -g @vue/cli
+
+create newvue1
+
+Y/n => Y
+
+npm run serve
+
+밑에나온 서버주소로 접속하면 됩니다.
+
